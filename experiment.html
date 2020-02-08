@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+    <head>
+        <title>WEB1-HTML tags and attributes</title>
+        <meta charset="utf-8">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158072207-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158072207-1');
+      </script>
+    </head>
+    <body>
+      <h1>HTML Tags and Attributes</h1>
+      <ol>
+        <h1><li>hr tag</li></h1>
+
+        <p>Normal horizontal line.</p>
+        <hr>
+
+        <p>Horizontal line with height of 30 pixels</p>
+        <hr size="30">
+
+        <p>Horizontal line with height of 30 pixels
+                                       and noshade.</p>
+        <hr size="30" noshade>
+        <hr>
+
+        <h1><li>!-- -- tag</li></h1>
+        <p>개발자의 편의를 위한 주석 달기 태그. 소스로만 표시되며, 화면에는 보이지 않는다.</p>
+        <p>ex)<b>Thank you</b><!--youtube--></p>
+        <hr>
+
+        <h1><li>abbr tag</li></h1>
+        <p>abbreviation or acronym</p>
+        <p>ex) The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        <hr>
+
+        <h1><li>bdi tag</li></h1>
+        <p>양방향 텍스트 정렬.</p>
+        <p>아랍어나 히브리어와 같이 텍스트 방향이 반대인 텍스트를 적을 때 해당부분을 스스로 읽고 표기방향을 자동으로 제어해줌.
+        영어와 아랍어를 같이 쓰는 document에서 사용하면 좋음.</p>
+        <p>ex)</p>
+        <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+        </ul>
+        <hr>
+
+        <h1><li>bdo tag</li></h1>
+        <p>텍스트의 방향 지정 태그.</p>
+        <ul>
+          <li>bdo dir=rtl : 오른쪽에서 왼쪽으로</li>
+          <li>bdo dir=ltr : 왼쪽에서 오른쪽으로</li>
+        </ul>
+        <p>ex)</p>
+        <p>이 단락은 왼쪽에서 오른쪽으로 글자가 흘러갑니다.</p>
+        <p><bdo dir=rtl>이 단락은 오른쪽에서 왼쪽으로 글자가 흘러갑니다.</bdo></p>
+        <p>이 부분은 왼쪽에서 오른쪽으로<bdo dir=rtl>이 부분은 오른쪽에서 왼쪽으로</bdo></p>
+        <hr>
+
+        <h1><li>blockquote tag</li></h1>
+        <p>다른 소스로부터 인용할 구역을 지정하는 태그.</p>
+        <p>ex)</p>
+        <h3>About WWF</h3>
+        <p>Here is a quote from WWF's website:</p>
+
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>
+        <hr>
+
+        <h1><li>i tag & em tag</li></h1>
+        <p>둘다 표면상은 이탤릭체로 보여지나,</p>
+        <ul>
+          <li>i tag : <i>단순한 html의 스타일</i>을 정의하는 태그. 화면에 보여지는 모양 정의.</li>
+          <li>em tag : emphasize의 약자. <em>"강조함", "중요함"</em>을 표현함.</li>
+        </ul>
+        <hr>
+
+        <h1><li>address tag</li></h1>
+        <p>contact info for the author or owner of a doc or an article</p>
+        <p><i>italic체</i>로 표시됨</p>
+        <p>ex)</p>
+        <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+        </address>
+        <hr>
+
+        <h1><li>footer tag</li></h1>
+        <p>footer, 즉 꼬리말을 나타내는 태그.</p>
+        <p>authorship info, copyrignht info, contact info, sitemap, back to top links, related doc 등 포함</p>
+        <p>ex)</p>
+        <footer>
+          <p>Posted by: Hege Refsnes</p>
+          <p>Contact information: <a href="mailto:someone@example.com">
+          someone@example.com</a>.</p>
+        </footer>
+      </ol>
+      <!--https://www.youtube.com/watch?v=dmovVa0jseU 1:37-->
+
+      <br>
+      <p>
+        <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://web1-5bjfvbuzpw.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </p>
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5e3edae1298c395d1ce6e8a7/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+      <!--End of Tawk.to Script-->
+
+    </body>
+</html>
